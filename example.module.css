@@ -1,0 +1,125 @@
+/* General card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content vertically */
+    align-items: center; /* Center align items horizontally */
+    width: 100%; /* Card adjusts to container width */
+    max-width: 400px; /* Maximum width for larger screens */
+    padding: 1.5rem;
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* Background color */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  /* Card image styling */
+  .card img {
+    width: 100%; /* Adjust image to card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners for the image */
+    object-fit: cover; /* Crop image if needed */
+  }
+  
+  /* Card content (title, text, etc.) */
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .card-content h2 {
+    font-size: 2.3rem;
+    margin-bottom:  15px; ;
+    color: #000;
+  }
+  
+  .card-content p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  /* Button styling
+  .card-content button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.4rem;
+    background-color: var(--main-color, #0062ff); /* Use a CSS variable or fallback */
+    /* color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.card-content button:hover {
+    background-color: var(--btn-hover-bg-color, #003b99);
+  } */ 
+
+  .rating {
+    padding: 0.3rem 1.8rem;
+    color: #000;
+    margin-left: 1.2rem;
+    border-radius: 100rem;
+    
+}
+
+.hit{
+    background-color: #7dcea0;
+}
+
+.average {
+    background-color: #f7dc6f;
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      max-width: 90%; /* Adjust card size on smaller screens */
+      padding: 1rem;
+    }
+  
+    .card-content h2 {
+      font-size: 1.6rem; /* Adjust font size for smaller cards */
+    }
+  
+    .card-content p {
+      font-size: 1.2rem; /* Adjust font size for smaller cards */
+    }
+  
+    .card-content button {
+      font-size: 1.2rem; /* Adjust button font size */
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      padding: 0.8rem;
+    }
+  
+    .card-content h2 {
+      font-size: 1.4rem;
+    }
+  
+    .card-content p {
+      font-size: 1rem;
+    }
+  
+    .card-content button {
+      font-size: 1rem;
+      padding: 0.4rem 1rem;
+    }
+  }
+
+.card-heading {
+    margin-bottom: 33px;
+    text-align: center;
+}
+  
